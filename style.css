@@ -16,10 +16,11 @@ body {
 	font-family: sans-serif;
 	font-size: 1rem;
 	background-color: #240046;
+	line-height: 1.6;
 }
 
 .container {
-	max-width: 306px;
+	max-width: 406px;
 	margin: 0 auto;
 	width: 90%;
 }
@@ -50,9 +51,16 @@ div {
 	}
 
 	div {
-		font-size: 10rem;
+		font-size: 9rem;
 		width: 150px;
 		height: 150px;
 	}
+}
+
+
+.result {
+	margin-top: 2rem;
+	color: #b5179e;
+	text-align: center;
 }
 
