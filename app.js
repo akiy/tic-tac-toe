@@ -23,7 +23,7 @@ function makeComputerMove(){
 
 	if (remainMoves) {
 		remainMoves--;
-		boardCells[move].innerHTML = computerMarker;	
+		boardCells[move].innerHTML = computerMarker;
 	}
 		console.log('remain', remainMoves);
 }
@@ -31,7 +31,6 @@ function makeComputerMove(){
 function generateRandomMove() {
 	return Math.floor(Math.random() * 9);
 }
-
 
 function checkResult() {
 
@@ -41,9 +40,9 @@ function resetBoard() {
 	boardCells.forEach(cell => {
 		cell.innerHTML = "";
 	})
+
+	remainMoves = 9;
 }
-
-
 
 boardCells.forEach( boardCell => {
 	boardCell.addEventListener('click', makePlayerMove)
